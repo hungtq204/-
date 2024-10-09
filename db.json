@@ -1,0 +1,35 @@
+{
+  "products": [
+    {
+      "name": "Sản phẩm 4",
+      "imageUrl": "https://picsum.photos/500/500",
+      "price": 300,
+      "available": false,
+      "type": "type2",
+      "category": "2",
+      "description": "123131",
+      "id": 6
+    },
+    {
+      "name": "Sản phẩm 4",
+      "imageUrl": "https://picsum.photos/500/500",
+      "price": 300,
+      "available": false,
+      "type": "type2",
+      "category": "3",
+      "description": "123131",
+      "id": 7
+    },
+    {
+      "name": "Sản phẩm 4",
+      "imageUrl": "https://picsum.photos/500/500",
+      "price": 300,
+      "available": false,
+      "type": "type2",
+      "category": "3",
+      "description": "123131",
+      "id": 8
+    }
+  ],
+  "users": []
+}
