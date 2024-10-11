@@ -1,27 +1,28 @@
-
+import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import './App.css'
-import LayoutAdmin from './Layouts/LayoutAdmin'
-import Dashboard from './pages/Dashboard'
-import ProductPage from './pages/ProductPage';
-import ProductAdd from './components/ProductAdd';
-import Productedit from './components/Productedit';
+import HomePage from './pages/HomePage'
+import LayoutAdmin from './layouts/Admin/LayoutAdmin'
+import Dashboard from './Layouts/Admin/Dashboard'
+import ProductPageList from './Pages/ProductPageList'
+import ProductAdd from './components/ProductAdd'
+import Productedit from './Components/ProductEdit';
 
-function App() {
-
-
+const App = () => {
   return (
-    <>
+    <div>
+
+
       <Routes>
-        <Route path="/" element={<h1>Home Page</h1>} ></Route>
-        <Route path="/admin" element={<LayoutAdmin></LayoutAdmin>} >
-          <Route index element={<Dashboard />} />
-          <Route path='products' element={<ProductPage />} />
-          <Route path='products/add' element={<ProductAdd />} />
-          <Route path='products/:id/edit' element={<Productedit />} />
+
+        <Route path='/' element={<HomePage></HomePage>}></Route>
+        <Route path='/admin' element={<LayoutAdmin></LayoutAdmin>}>
+          <Route index element={<Dashboard></Dashboard>}></Route>
+          <Route path='products' element={<ProductPageList></ProductPageList>}></Route>
+          <Route path='products/add' element={<ProductAdd></ProductAdd>}></Route>
+          <Route path='products/edit/:id' element={<Productedit></Productedit>}></Route>
         </Route>
       </Routes>
-    </>
+    </div>
   )
 }
 
